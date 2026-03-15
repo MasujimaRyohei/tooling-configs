@@ -76,6 +76,7 @@ Available: `node.gitignore`, `react.gitignore`, `next.gitignore`, `expo.gitignor
 
 - [Setup Guide](docs/setup.md) — Step-by-step setup for new projects
 - [Rules Philosophy](docs/rules.md) — Why these rules exist and how to think about them
+- [Coding Rules Reference](docs/coding-rules.ts) — TypeScript で定義されたルール一覧（Prettier / ESLint / EditorConfig）
 
 ## Scripts
 

@@ -1,0 +1,15 @@
+{
+  "name": "@tooling-configs/prettier-config",
+  "version": "0.1.0",
+  "description": "Shared Prettier configuration for JavaScript/TypeScript projects",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "prettier",
+    "config",
+    "shared"
+  ],
+  "license": "MIT"
+}

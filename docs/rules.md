@@ -37,7 +37,7 @@ You can always tighten rules in a specific project if needed.
 
 **Next.js:** React + Next.js recommended + Core Web Vitals. Image, link, and script usage rules.
 
-**Expo:** React baseline. Same as React for now; Expo-specific rules can be added later.
+**Expo:** React + `__DEV__` global + ignores for generated Expo and native directories.
 
 ## Extending
 

@@ -33,7 +33,7 @@ tooling-configs/
 ### Prettier
 
 ```bash
-pnpm add -D @tooling-configs/prettier-config prettier
+pnpm add -D github:MasujimaRyohei/tooling-configs#path:packages/prettier-config prettier
 ```
 
 Add to `package.json`:
@@ -49,7 +49,7 @@ Add to `package.json`:
 **Base (TypeScript / Node):**
 
 ```bash
-pnpm add -D @tooling-configs/eslint-config eslint typescript-eslint
+pnpm add -D github:MasujimaRyohei/tooling-configs#path:packages/eslint-config eslint
 ```
 
 Create `eslint.config.mjs`:

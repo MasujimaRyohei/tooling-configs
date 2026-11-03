@@ -4,7 +4,7 @@ This guide walks through using the shared tooling configs in a new project. Copy
 
 ## Prerequisites
 
-- Node.js 18+
+- Node.js 20.19.4+
 - pnpm
 
 ```bash
@@ -19,7 +19,7 @@ npm install -g pnpm
 ### Install
 
 ```bash
-pnpm add -D @tooling-configs/prettier-config prettier
+pnpm add -D github:MasujimaRyohei/tooling-configs#path:packages/prettier-config prettier
 ```
 
 ### Configure
@@ -50,7 +50,7 @@ Add to your `package.json`:
 ### Base (TypeScript / Node)
 
 ```bash
-pnpm add -D @tooling-configs/eslint-config eslint typescript-eslint
+pnpm add -D github:MasujimaRyohei/tooling-configs#path:packages/eslint-config eslint
 ```
 
 Create `eslint.config.mjs`:
@@ -64,7 +64,7 @@ export default [...base];
 ### React
 
 ```bash
-pnpm add -D @tooling-configs/eslint-config eslint typescript-eslint eslint-plugin-react eslint-plugin-react-hooks
+pnpm add -D github:MasujimaRyohei/tooling-configs#path:packages/eslint-config eslint eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 Create `eslint.config.mjs`:
@@ -78,7 +78,7 @@ export default [...react];
 ### Next.js
 
 ```bash
-pnpm add -D @tooling-configs/eslint-config eslint next
+pnpm add -D github:MasujimaRyohei/tooling-configs#path:packages/eslint-config eslint eslint-plugin-react eslint-plugin-react-hooks @next/eslint-plugin-next
 ```
 
 Create `eslint.config.mjs`:
@@ -92,7 +92,7 @@ export default [...next];
 ### Expo
 
 ```bash
-pnpm add -D @tooling-configs/eslint-config eslint typescript-eslint eslint-plugin-react eslint-plugin-react-hooks
+pnpm add -D github:MasujimaRyohei/tooling-configs#path:packages/eslint-config eslint eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 Create `eslint.config.mjs`:
@@ -167,10 +167,10 @@ If this repo lives alongside your app (e.g. in a monorepo), use workspace protoc
 
 ---
 
-## Using from npm (when published)
+## Updating
+
+The packages are installed from GitHub and the lockfile pins the commit. To pick up the latest `main`:
 
 ```bash
-pnpm add -D @tooling-configs/prettier-config @tooling-configs/eslint-config
+pnpm update @tooling-configs/prettier-config @tooling-configs/eslint-config --latest
 ```
-
-Same config usage as above.

@@ -7,7 +7,7 @@ Shared Prettier configuration for JavaScript/TypeScript projects.
 ### Install
 
 ```bash
-pnpm add -D @tooling-configs/prettier-config prettier
+pnpm add -D github:MasujimaRyohei/tooling-configs#path:packages/prettier-config prettier
 ```
 
 ### Configure
